@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*, *::after, *::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img, svg {
+   display: block;
+   object-fit: cover;
+}
+
+:root {
+   font-size: 10px;
+   --bg: hsl(207, 26%, 17%);
+   --text: hsl(0, 0%, 100%);
+   --elements: hsl(209, 23%, 22%);
+   --input: hsl(0, 0%, 90%);
+   --hover: hsl(44, 90%, 49%);
+   --border: hsl(0, 0%, 10%);
+}
+
+.light {
+   --bg: hsl(0, 0%, 90%);
+   --text: hsl(200, 15%, 8%);
+   --elements: hsl(0, 0%, 98%);
+   --input: hsl(0, 0%, 52%);
+   --hover: hsl(253, 91%, 56%);
+   --border: hsl(0, 0%, 60%);
+}
+
+// responsive
+
+@mixin tablet {
+   @media screen and (min-width: 768px) {
+       @content; 
+   }
+}
+
+@mixin laptop {
+   @media screen and (min-width: 1200px) {
+       @content; 
+   }
+}
