@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-const url = "https://restcountries.eu/rest/v2/all"
+const url = "https://restcountries.com/v2/all"
 
 const AppContext = createContext()
 
