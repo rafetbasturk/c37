@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FaLongArrowAltLeft, FaSpinner } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 
-const url = "https://restcountries.eu/rest/v2/name/"
+const url = "https://restcountries.com/v2/name/"
 
 const DetailPage = () => {
    const [isLoading, setIsLoading] = useState(true)
